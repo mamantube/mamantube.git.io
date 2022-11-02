@@ -97,10 +97,104 @@
           font-weight: 100;
           font-size: 4.3em;
           text-align: center;
-          top: 120px;
+          margin-top: 120px;
         }
 
+        .main .content .tanggal {
+          color: white;
+          justify-content: center;
+          display: flex;
+          margin: 0px 20px 0px;
+          font-size: 1.2em;
+        }
 
+        .main .content .notif {
+          background: rgba(231, 231, 231, 0.945);
+          width: 88%;
+          padding: 15px;
+          margin: 10px auto;
+          border-radius: 15px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
+          cursor: pointer;
+          transform: translateX(-100vw);
+          transition: 300ms all ease;
+        }
+
+        .main .content .notif .header {
+          color: rgb(65, 65, 65);
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5px;
+        }
+
+        .main .content .notif .header .wa {
+          display: flex;
+          align-items: center;
+        }
+
+        .main .content .notif .header .wa h3 {
+          margin-right: 6px;
+          font-weight: 400;
+          font-size: 0.9em;
+        }
+
+        .main .content .notif .header .wa h3 .logo {
+          color: white;
+          width: 23px;
+          height: 23px;
+          border-radius: 6px;
+          background-image: linear-gradient(190deg, #72e587, #23a542);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.3em;
+        }
+
+        .main .content .notif .header .time {
+          font-size: 0.9em;
+        }
+
+        .main .content .notif .nama {
+          font-weight: 500;
+          font-size: 1.1em;
+        }
+
+        .btn-mulai {
+          color: rgb(0, 0, 0);
+          position: absolute;
+          bottom: 150px;
+          right: 0;
+          left: 0;
+          text-align: center;
+        }
+
+        .btn-mulai p {
+          background: rgba(231, 231, 231, 0.788);
+          color: rgb(36, 36, 36);
+          padding: 5px 10px;
+          border-radius: 10px;
+          display: inline-block;
+          font-size: 1.1em;
+          font-weight: bold;
+          cursor: pointer;
+          animation: goyang 1200ms infinite ease;
+          box-shadow: 1px 1px 10px rgb(0, 0, 0);
+        }
+
+        .btn-mulai p.hilang2 {
+          display: none;
+        }
+
+        .btn-mulai p.kirimWA {
+          color: white;
+          background: #23a542;
+        }
+
+        @keyframes goyang {
+          0% {transform: translateY(0);} 50% {transform: translateY(5px);}
+        }
 
     </style>
 </head>
