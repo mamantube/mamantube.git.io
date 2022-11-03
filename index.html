@@ -299,8 +299,8 @@
           </div>
         </div>
       </div>
-      <!-- <audio class="audio" src="https://dekatutorial.github.io/Sezairi%20-%20It's%20You.mp3" autoplay type="audio" loop=""></audio>
-      <audio class="notif" src="https://dekatutorial.github.io/notif.mp3" type="audio"></audio> -->
+      <audio class="audio" src="https://dekatutorial.github.io/Sezairi%20-%20It's%20You.mp3" autoplay type="audio" loop=""></audio>
+      <audio class="notif" src="https://dekatutorial.github.io/notif.mp3" type="audio"></audio>
       <div class="background1"></div>
       <div class="background2"></div>
       <div class="main">
@@ -352,5 +352,21 @@
           </div>
         </div>
       </div>
+      <script>
+      let pengirim = "";
+      let musik = "";
+      let ucapan = "";
+      let background1 = "";
+      let background2 = "";
+      let noWhatsapp = "";
+      let pesanWhatsapp = "";
+
+      let audio = document.querySelector (".audio");
+      if (musik) audio.src = musik; 
+
+      let notif = document.querySelector (".notif");
+      if (pengirim) {document.querySelector (".nama1").innerHTML = pengirim; document.querySelector (".nama2").innerHTML = pengirim;}
+      if (background1) {}
+      </script>
 </body>
 </html>
