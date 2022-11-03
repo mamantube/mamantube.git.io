@@ -193,7 +193,97 @@
         }
 
         @keyframes goyang {
-          0% {transform: translateY(0);} 50% {transform: translateY(5px);}
+          0% {transform: translateY(0);} 50% {transform: translateY(5px);} 100% {transform: translateY(10);}
+        }
+
+        .kelip {
+          animation: kelip 1200ms infinite ease;
+        }
+
+        @keyframes kelip {
+          0% {opacity: 1;} 50% {opacity: 0.8;} 100% {opacity: 1;}
+        }
+
+        @media screen and (max-width: 600px) {
+          .background1 {width: 100vw; left: 0;}
+          .main .content {width: 100%;}
+          .loading {width: 100%; margin-left: 0; transform: none;}
+          .background2 {width: 100vw; left: 0;}
+        }
+
+        .border-radius {
+          border-radius: 15px !important;
+        }
+
+        @keyframes loadingmy {
+          0% {transform: rotate(0);} 100% {transform: rotate(360deg);}
+        }
+
+        .loadingmy div {
+          box-sizing: border-box !important;
+        }
+
+        .loadingmy > div {
+          position: absolute;
+          width: 74px;
+          height: 74px;
+          top: 13px;
+          left: 13px;
+          border-radius: 50%;
+          border: 10px solid #000;
+          border-color: #e81a46 transparent #e81a46 transparent;
+          animation: loadingmy 1s linear infinite;
+        }
+
+        .loadingmy > div:nth-child(2) {
+          border-color: transparent;
+        }
+
+        .loadingmy > div:nth-child(2) div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: rotate(45deg);
+        }
+
+        .loadingmy > div:nth-child(2) div:before, .loadingmy > div:nth-child(2) div:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: -10px;
+          left: 22px;
+          background: red #e81a46 ;
+          border-radius: 50px;
+          box-shadow: 0 64px 0 0 #e81a46;
+        }
+
+        .loadingmy > div:nth-child(2) div:after {
+          left: -10px;
+          top: 22px;
+          box-shadow: 64px 0 0 #e81a46;          
+        }
+
+        .myloading {
+          width: 52px;
+          height: 52px;
+          display: inline-block;
+          overflow: hidden;
+          background: #121212;
+        }
+
+        .loadingmy {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform: translateZ(0) scale(0.52);
+          backface-visibility: hidden;
+          transform-origin: 0 0;
+        }
+
+        .loadingmy div {
+          box-sizing: content-box;
         }
 
     </style>
@@ -209,8 +299,8 @@
           </div>
         </div>
       </div>
-      <audio class="audio" src="https://dekatutorial.github.io/Sezairi%20-%20It's%20You.mp3" autoplay type="audio" loop=""></audio>
-      <audio class="notif" src="https://dekatutorial.github.io/notif.mp3" type="audio"></audio>
+      <!-- <audio class="audio" src="https://dekatutorial.github.io/Sezairi%20-%20It's%20You.mp3" autoplay type="audio" loop=""></audio>
+      <audio class="notif" src="https://dekatutorial.github.io/notif.mp3" type="audio"></audio> -->
       <div class="background1"></div>
       <div class="background2"></div>
       <div class="main">
